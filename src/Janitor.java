@@ -1,35 +1,20 @@
 public class Janitor extends Staff {
     private int roomsToClean;
 
-    public Janitor(int id,String firstName,String lastName, float avgGrade, String currentSubject){
+    public Janitor(int id,String firstName,String lastName, int roomsToClean){
         super(id,firstName,lastName);
-        this.avgGrade = avgGrade;
-        this.currentSubject = currentSubject;
+        this.roomsToClean = roomsToClean;
     }
 
-    public float getAvgGrade() {
-        return avgGrade;
+    public int getRoomsToClean() {
+        return roomsToClean;
     }
-
-    public void setAvgGrade(float avgGrade) {
-        this.avgGrade = avgGrade;
-    }
-
-    public String getCurrentSubject() {
-        return currentSubject;
-    }
-
-    public void setCurrentSubject(String currentSubject) {
-        this.currentSubject = currentSubject;
+    public void setRoomsToClean(int roomsToClean) {
+        this.roomsToClean = roomsToClean;
     }
 
     @Override
     public String toString() {
-        return  "id: "+getId()+
-                "firstName: "+getFirstName()+
-                "lastName: "+getLastName()+
-                "arrivalTime: "+getArrivalTime()+
-                "avgGrade: "+getAvgGrade()+
-                "currentSubject: "+getCurrentSubject();
+        return super.toString() + "roomsToClean: " +getRoomsToClean();
     }
 }

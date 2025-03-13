@@ -16,7 +16,6 @@ public abstract class Staff {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -24,7 +23,6 @@ public abstract class Staff {
     public String getFirstName() {
         return firstName;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -32,7 +30,6 @@ public abstract class Staff {
     public String getLastName() {
         return lastName;
     }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
@@ -40,10 +37,14 @@ public abstract class Staff {
     public LocalDate getArrivalTime() {
         return arrivalTime;
     }
-
     public void setArrivalTime(LocalDate arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 
-    public abstract String toString();
+    public String toString(){
+        return  "id: "+getId()+
+                "firstName: "+getFirstName()+
+                "lastName: "+getLastName()+
+                "arrivalTime: "+getArrivalTime();
+    }
 }

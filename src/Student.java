@@ -11,7 +11,6 @@ public class Student extends Staff {
     public float getAvgGrade() {
         return avgGrade;
     }
-
     public void setAvgGrade(float avgGrade) {
         this.avgGrade = avgGrade;
     }
@@ -19,18 +18,12 @@ public class Student extends Staff {
     public String getCurrentSubject() {
         return currentSubject;
     }
-
     public void setCurrentSubject(String currentSubject) {
         this.currentSubject = currentSubject;
     }
 
     @Override
     public String toString() {
-        return  "id: "+getId()+
-                "firstName: "+getFirstName()+
-                "lastName: "+getLastName()+
-                "arrivalTime: "+getArrivalTime()+
-                "avgGrade: "+getAvgGrade()+
-                "currentSubject: "+getCurrentSubject();
+        return super.toString() + "avgGrade: " +getAvgGrade()+ "currentSubject: " +getCurrentSubject();
     }
 }
