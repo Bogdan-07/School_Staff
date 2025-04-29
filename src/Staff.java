@@ -7,7 +7,7 @@ public abstract class Staff {
     private LocalDate arrivalTime;
 
     public Staff(int id,String firstName,String lastName){
-        this.id = id;
+        this.id =id;
         this.firstName = firstName;
         this.lastName = lastName;
         arrivalTime = LocalDate.now();
