@@ -24,6 +24,6 @@ public class Student extends Staff {
 
     @Override
     public String toString() {
-        return super.toString() + "avgGrade: " +getAvgGrade()+ "currentSubject: " +getCurrentSubject();
+        return super.toString() +"avgGrade: " +getAvgGrade()+ "currentSubject: " +getCurrentSubject();
     }
 }

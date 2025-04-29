@@ -24,6 +24,6 @@ public class Teacher extends Staff {
 
     @Override
     public String toString() {
-        return super.toString() + "subject: " +getSubject()+ "currentClassroom: " +getCurrentClassroom();
+        return super.toString() + "subject: " +getSubject()+"currentClassroom: " +getCurrentClassroom();
     }
 }

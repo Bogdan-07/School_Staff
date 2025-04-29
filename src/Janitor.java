@@ -15,6 +15,6 @@ public class Janitor extends Staff {
 
     @Override
     public String toString() {
-        return super.toString() + "roomsToClean: " +getRoomsToClean();
+        return super.toString() +"roomsToClean: " +getRoomsToClean();
     }
 }

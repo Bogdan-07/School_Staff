@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class StaffManager {
     private ArrayList<Staff> staffManager = new ArrayList<Staff>();
     private int index;
-    private final int head = 0;
+    private final int head =0;
 
     public StaffManager(){
         index = head;
