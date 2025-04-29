@@ -14,7 +14,7 @@ public class Main {
             switch (scanner.nextInt()) {
                 case 1:
                     System.out.println("-------------------------------------");
-                    System.out.print("1. Add a Student\n2. Add a Janitor\n3. Add a Teacher\n4. Go back\n\n What do you want to do?: ");
+                    System.out.print("1. Add a Student\n2. Add a Janitor\n3. Add a Teacher\n4. Go back\n\n What do you want to do?:");
                     switch (scanner.nextInt()) {
                         case 1:
                             //Student sTemp = new Student();
